@@ -53,6 +53,10 @@ func PrintPods(podList v1.PodList) {
 }
 
 func PrintPrettyHttpResponse(resp *http.Response, err error) {
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	bodyBytes, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		log.Fatal(err)
