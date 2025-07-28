@@ -32,7 +32,7 @@ func printLogo() {
 
 Author: Eviatar Gerzi
 Version: 1.13  
-GitHub: https://github.com/cyberark/kubesploit
+GitHub: https://github.com/cyberark/kubeletctl
 `
 	fmt.Println(logo)
 }
